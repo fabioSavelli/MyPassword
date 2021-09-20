@@ -3,6 +3,7 @@ package com.example.mypassword.utils;
 import com.example.mypassword.model.Account;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ConvertiUtility {
@@ -12,12 +13,14 @@ public class ConvertiUtility {
         String servizio = SaveUtility.getTagValues(stringaAccount, Costanti.Save.TagNameAccount.SERVIZIO).get(0).trim();
         String username = SaveUtility.getTagValues(stringaAccount, Costanti.Save.TagNameAccount.USERNAME).get(0).trim();
         String password = SaveUtility.getTagValues(stringaAccount, Costanti.Save.TagNameAccount.PASSWORD).get(0).trim();
+        String appunti = SaveUtility.getTagValues(stringaAccount, Costanti.Save.TagNameAccount.APPUNTI).get(0).trim();
 
         Account account = new Account();
         account.setId(id);
         account.setServizio(servizio);
         account.setUsername(username);
         account.setPassword(password);
+        account.setAppunti(appunti);
 
         return account;
     }
@@ -31,6 +34,7 @@ public class ConvertiUtility {
             accountString += SaveUtility.getTagString(account.getServizio(), Costanti.Save.TagNameAccount.SERVIZIO);
             accountString += SaveUtility.getTagString(account.getUsername(), Costanti.Save.TagNameAccount.USERNAME);
             accountString += SaveUtility.getTagString(account.getPassword(), Costanti.Save.TagNameAccount.PASSWORD);
+            accountString += SaveUtility.getTagString(account.getAppunti(), Costanti.Save.TagNameAccount.APPUNTI);
             accountString +=  "</" + Costanti.Save.TagNameAccount.TAG_ACCOUNT + ">\n";
         }
         return accountString;
@@ -47,6 +51,8 @@ public class ConvertiUtility {
             listaAccount.add(account);
         }
 
+        Collections.sort(listaAccount);
+
         return listaAccount;
     }
 
@@ -59,5 +65,9 @@ public class ConvertiUtility {
             }
         }
         return accountString;
+    }
+
+    public static String primaLetteraMaiuscola(String str){
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
 }

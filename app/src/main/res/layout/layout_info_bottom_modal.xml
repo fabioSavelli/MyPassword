@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_modal_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/infoBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/info_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:text="Informazioni"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="16dp"
+        android:text="Questa applicazione salva le tue password in maniera del tutto sicura sul tuo dispositivo. Nessun dato sarà esposto online per la tua sicurezza. Ogni dato sarà coperto da criptazione di alto livello e accessibile solo ed esclusivamente da te attraverso il tuo PIN o più comodamente tramite scan biometrico.\n\n- Fabio Savelli"
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonEditPinInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_outline_background"
+        android:text="Modifica PIN"
+        android:textSize="16sp"
+        android:textColor="@color/my_light_blue" />
+
+    <Button
+        android:id="@+id/buttonCloseInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="Chiudi"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

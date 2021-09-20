@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_modal_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/cercaBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/search_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:text="Carca Password"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Cerca la password di sito internet o di un servizio\nQuesta funzione è ancora in fase di sviluppo..."
+        android:textColor="@color/dark_grey"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey" />
+
+    <EditText
+        android:id="@+id/campoRicerca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Sito Web o Servizio"
+        android:textColorHint="@color/edit_text_hint_grey"
+        android:textColor="@color/edit_text_icon_grey"
+        android:background="@drawable/edit_text_background"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:imeOptions="actionSearch"
+        android:drawableStart="@drawable/ic_baseline_search_grey_24"
+        android:drawableTint="@color/edit_text_icon_grey"
+        android:drawablePadding="5dp"
+        android:inputType="textCapSentences" />
+
+
+    <Button
+        android:id="@+id/buttonCercaModal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_background"
+        android:text="Cerca"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

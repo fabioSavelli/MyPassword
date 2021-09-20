@@ -8,7 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#BBBBBB</color>
+    <color name="edit_text_grey">#D3D3D3</color>
+    <color name="edit_text_hint_grey">#A0A0A0</color>
+    <color name="edit_text_icon_grey">#6a6a6a</color>
+    <color name="dark_grey">#252525</color>
     <color name="trasparent">#00000000</color>
 
     <color name="my_light_blue">#2D6E96</color>
+    <color name="my_green">#00B74A</color>
+    <color name="my_red">#dc3545</color>
+
 </resources>

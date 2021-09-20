@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/inserisciPinBottomContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_modal_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_pin_black_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:text="Inserisci PIN"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/istruzioniInserisciPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserisci il codice PIN"
+            android:gravity="center"
+            android:textColor="@color/edit_text_hint_grey"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pinImageInserisci1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pin_empty"
+                android:layout_margin="24dp" />
+            <ImageView
+                android:id="@+id/pinImageInserisci2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pin_empty"
+                android:layout_margin="24dp" />
+            <ImageView
+                android:id="@+id/pinImageInserisci3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pin_empty"
+                android:layout_margin="24dp" />
+            <ImageView
+                android:id="@+id/pinImageInserisci4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pin_empty"
+                android:layout_margin="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bottoneInserisciPin1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="1"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="2"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="3"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bottoneInserisciPin4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="4"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="5"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="6"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bottoneInserisciPin7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="7"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="8"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="9"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/bottoneCancellaInserisciPin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_baseline_backspace_24"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/bottoneInserisciPin0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:text="0"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:textColor="@color/my_light_blue"
+                android:gravity="center"
+                android:textSize="24sp"/>
+
+            <ImageButton
+                android:id="@+id/bottoneConfermaInserisciPin"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/ic_baseline_check_grey_24"
+                android:background="@drawable/button_pin_trasparent_background"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
